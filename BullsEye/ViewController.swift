@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         roundLabel.text = String(round)
     }
     
+    
     @IBAction func showAlert() {
         let difference = abs(targetValue - currentValue)
         var points = 100 - difference
@@ -78,6 +79,12 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
+    }
+    
+    @IBAction func startOver() {
+        score = 0
+        round = 0
+        startNewRound()
     }
 
 
