@@ -13,6 +13,7 @@ class AboutViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
+    //Load the HTML file into the webView.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +25,7 @@ class AboutViewController: UIViewController {
         }
     }
     
+    //Close the AboutViewController
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
     }
